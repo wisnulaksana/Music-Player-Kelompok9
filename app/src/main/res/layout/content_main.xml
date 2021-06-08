@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <!-- TOOLBAR WITH SEARCH, THREE DOTS -->
+
+
+
+  <com.google.android.material.appbar.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/app_bar_main"
+      android:background="#2196F3"
+      >
+
+      <androidx.appcompat.widget.Toolbar
+          android:id="@+id/toolbar_main"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          android:textAlignment="textStart"
+          android:minHeight="50dp"
+          app:titleTextColor="@android:color/white"
+          app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+          app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+          app:layout_scrollFlags="scroll|enterAlways|snap"
+          />
+      <!-- Tablayout to display tab -->
+      <com.google.android.material.tabs.TabLayout
+          android:id="@+id/tabs"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:tabGravity="fill"
+          app:tabMode="fixed"
+          app:tabTextColor="#e7e8e6"
+          app:tabSelectedTextColor="#fff"
+          app:tabIndicatorColor="#fff"
+          />
+
+
+      </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+
+           <!-- viewPager to swipe tab -->
+           <androidx.viewpager.widget.ViewPager
+               app:layout_behavior="@string/appbar_scrolling_view_behavior"
+               android:fitsSystemWindows="true"
+               android:id="@+id/viewpager_"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+              />
+
+
+
+           <include
+            android:id="@+id/bottom_now_playing"
+            layout="@layout/bottom_now_playing"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            />
+
+
+
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

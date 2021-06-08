@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_playlist"
+    tools:context="com.kelompok9.musicplayer.Fragment.PlayLists">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/create_playlist_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/create_playlist_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:background="#2196F3"
+                android:foreground="@drawable/ic_add_black_1dp" />
+            <TextView
+                android:id="@+id/create_palylist_name"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Create Playlist"
+                android:layout_gravity="center_vertical" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/favourite_play_list"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/create_myfabourite_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:background="#2196F3"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_album_black_24dp" />
+
+            <LinearLayout
+                android:id="@+id/favourite_play_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#2196F3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fav_name"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="My favourites" />
+
+                <TextView
+                    android:id="@+id/favourite_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/play_lists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+        
+
+
+
+    </LinearLayout>
+
+    
+
+
+</FrameLayout>

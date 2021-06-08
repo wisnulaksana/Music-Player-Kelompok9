@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/playlist_info_bottom_sheet_playlist_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="songName"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:maxLines="1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:ellipsize="end"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+
+
+    <TextView
+        android:id="@+id/playlist_info_bottom_sheet_delete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Delete"
+        android:textColor="#2196F3"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/playlist_info_bottom_sheet_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Cancel"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kelompok9.musicplayer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MEDIA_CONTENT_CONTROL"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupOnly="true"
+        android:icon="@drawable/album_art"
+        android:label="Kelompok 9 Music Player"
+        android:largeHeap="true"
+        android:restoreNeedsApplication="true"
+        android:roundIcon="@drawable/album_art"
+        android:supportsRtl="true">
+        <activity
+            android:name=".Activity.SplashScreen"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.ArtistsActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.PlayListActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.FavouriteActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.NowPlayingActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.AlbumsActivity"
+            android:label="@string/title_activity_albums"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/AppTheme" />
+
+        <receiver android:name=".Notification.NotificationBroadcast">
+            <intent-filter>
+                <action android:name="io.sample.musicism.previous" />
+                <action android:name="io.sample.musicism.delete" />
+                <action android:name="io.sample.musicism.pause" />
+                <action android:name="io.sample.musicism.next" />
+                <action android:name="io.sample.musicism.play" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    android:id="@+id/r_l_create"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+
+    <TextView
+        android:id="@+id/create_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Create new playlist"
+        android:textSize="18dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <EditText
+        android:id="@+id/create_playlist_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:outlineSpotShadowColor="#2196F3"
+        android:outlineAmbientShadowColor="#2196F3"
+        android:background="#fff"
+        android:textColorLink="#2196F3"
+        android:textColorHighlight="#2196F3"
+        android:outlineProvider="background"
+        android:layout_centerInParent="true"
+        android:hint="playlist"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_above="@+id/ll"/>
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:id="@+id/create_playlist_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:text="Cancel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="15dp"
+            android:layout_weight="50"/>
+        <TextView
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:id="@+id/create_playlist_create"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:background="#ffffff"
+            android:text="Create new"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#2196F3"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
